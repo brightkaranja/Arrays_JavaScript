@@ -16,19 +16,12 @@ let arr3 = [-5, 9, 5, 3, 2, -3, 6, 8, 4, 1];
 arr3.sort((a, b) => a-b);
 console.log(arr3);
 
-let array = ["boy", "man", "girl", "school", "girl", "woman"];
-let uniqueArr = [];
-let duplicateArr = [];
+let arr = ["boy", "man", "girl", "school", "girl", "woman"];
+let uniqueArr = arr.filter((item, index) => arr.indexOf(item) === index);
+console.log(uniqueArr);
+let duplicateArr = arr.filter((item, index) => arr.indexOf(item) !== index);
+console.log(duplicateArr)
 
-// for (let i = 0; i < arr1.length; i++) {
-    // if (uniqueArr.indexOf(arr[i]) === -1) {
-        // uniqueArr.push(arr[i]);
-    // } else {
-        // duplicateArr.push(arr[i]);
-    // }
-// }
-// console.log("Unique array:", uniqueArr);
-// console.log("Dublicate array:", duplicateArr);
 
 let arr5 = ["the", "way", "x", 4];
 let searchWord = "food";
